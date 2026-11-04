@@ -3,824 +3,654 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#f47ca8" />
-  <title>Happy 3 Months, Babe 🦒</title>
+  <meta name="theme-color" content="#f5c2cc" />
+  <meta name="description" content="Six months of Nathan and Jay. A little corner of the internet made with a whole lot of love." />
+  <title>Happy 6 Months, Jay ♡ — Nathan + Jay</title>
   <style>
     :root {
-      --bg1: #eef7f6;
-      --bg2: #b7ddd7;
-      --paper: rgba(255,255,255,.88);
-      --paper-solid: #ffffff;
-      --text: #294340;
-      --muted: #56746f;
-      --accent: #5ca59a;
-      --accent2: #89cfc0;
-      --border: rgba(255,255,255,.75);
-      --shadow: 0 24px 70px rgba(39,74,71,.18);
+      color-scheme: light;
+      --bg1: #fff4f5;
+      --bg2: #f5dce8;
+      --paper: rgba(255,255,255,.82);
+      --solid: #fff;
+      --text: #513345;
+      --muted: #7a5a6a;
+      --accent: #ca5d85;
+      --accent2: #eda1b9;
+      --border: rgba(255,255,255,.82);
+      --shadow: 0 22px 62px rgba(101,43,69,.13);
+      --dark: #351322;
     }
-
     body[data-theme="otter"] {
-      --bg1: #eef7f6;
-      --bg2: #b7ddd7;
-      --paper: rgba(255,255,255,.88);
-      --paper-solid: #ffffff;
-      --text: #294340;
-      --muted: #56746f;
-      --accent: #5ca59a;
-      --accent2: #89cfc0;
-      --border: rgba(255,255,255,.75);
-      --shadow: 0 24px 70px rgba(39,74,71,.18);
+      --bg1: #fff1ed; --bg2: #f2d6e5; --text: #55384b; --muted: #7d6072;
+      --accent: #c65e88; --accent2: #f1a3ba; --dark: #3a152a;
     }
-
     body[data-theme="dinosaur"] {
-      --bg1: #eef8e8;
-      --bg2: #9fd48d;
-      --paper: rgba(255,255,255,.88);
-      --paper-solid: #ffffff;
-      --text: #294321;
-      --muted: #587053;
-      --accent: #4ea63f;
-      --accent2: #8edc70;
-      --border: rgba(255,255,255,.75);
-      --shadow: 0 24px 70px rgba(37,69,28,.18);
+      --bg1: #f2fae9; --bg2: #cfebbf; --text: #354d34; --muted: #657760;
+      --accent: #659c61; --accent2: #a8d69d; --dark: #233d2c;
     }
-
     body[data-theme="sealion"] {
-      --bg1: #edf8ff;
-      --bg2: #8ed3ef;
-      --paper: rgba(255,255,255,.88);
-      --paper-solid: #ffffff;
-      --text: #183b50;
-      --muted: #58758b;
-      --accent: #3f9bc9;
-      --accent2: #7fdcff;
-      --border: rgba(255,255,255,.75);
-      --shadow: 0 24px 70px rgba(27,92,123,.18);
+      --bg1: #effaff; --bg2: #c9e9f5; --text: #28526a; --muted: #5c7c8c;
+      --accent: #429cbd; --accent2: #92d6eb; --dark: #183d59;
     }
-
     body[data-theme="meerkat"] {
-      --bg1: #fff7df;
-      --bg2: #e9c483;
-      --paper: rgba(255,255,255,.88);
-      --paper-solid: #ffffff;
-      --text: #5b4123;
-      --muted: #876547;
-      --accent: #d39a3d;
-      --accent2: #f5cb74;
-      --border: rgba(255,255,255,.75);
-      --shadow: 0 24px 70px rgba(117,78,28,.18);
+      --bg1: #fff9e9; --bg2: #f4e1b5; --text: #64462c; --muted: #86694d;
+      --accent: #c28b49; --accent2: #ebc57e; --dark: #583923;
     }
-
     body[data-theme="giraffe"] {
-      --bg1: #fff2db;
-      --bg2: #dfaa64;
-      --paper: rgba(255,255,255,.88);
-      --paper-solid: #ffffff;
-      --text: #56361d;
-      --muted: #8a6344;
-      --accent: #c9782d;
-      --accent2: #f0b861;
-      --border: rgba(255,255,255,.75);
-      --shadow: 0 24px 70px rgba(119,70,27,.18);
+      --bg1: #fff4e7; --bg2: #f3d4ac; --text: #624125; --muted: #8f6b48;
+      --accent: #c58044; --accent2: #edb77e; --dark: #583720;
     }
-
     * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-
+    html { scroll-behavior: smooth; scroll-padding-top: 112px; }
     body {
-      margin: 0;
-      min-height: 100vh;
-      overflow-x: hidden;
-      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      color: var(--text);
+      margin: 0; overflow-x: hidden; min-height: 100vh;
+      font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       background:
-        radial-gradient(circle at 8% 0%, rgba(255,255,255,.78), transparent 28%),
-        radial-gradient(circle at 92% 14%, color-mix(in srgb, var(--accent2) 16%, transparent), transparent 27%),
-        linear-gradient(135deg, var(--bg1), var(--bg2));
-      transition: color .35s ease, background .45s ease;
+        radial-gradient(circle at 14% 2%, rgba(255,255,255,.94), transparent 30%),
+        radial-gradient(circle at 82% 17%, color-mix(in srgb, var(--accent2) 27%, transparent), transparent 30%),
+        linear-gradient(150deg,var(--bg1),var(--bg2));
+      background-attachment: fixed;
+      color: var(--text); transition: color .3s, background .4s;
     }
-
     body::before {
-      content: "";
-      position: fixed;
-      inset: 0;
-      z-index: -1;
-      pointer-events: none;
-      background-image: radial-gradient(rgba(255,255,255,.72) 1px, transparent 1px);
-      background-size: 24px 24px;
-      opacity: .24;
-      mask-image: linear-gradient(to bottom, black, transparent 78%);
+      content: ""; position: fixed; inset: 0; pointer-events: none; z-index: -1;
+      background-image: radial-gradient(rgba(255,255,255,.65) 1px,transparent 1px);
+      background-size: 24px 24px; opacity: .6;
     }
-
-    button, a { font: inherit; }
-    img { display: block; max-width: 100%; }
-
+    button, input, a { font: inherit; }
+    button { cursor: pointer; }
+    button:focus-visible, a:focus-visible, input:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+    img { max-width: 100%; display: block; }
+    a { color: inherit; }
+    .handwritten { font-family: "Bradley Hand", "Segoe Print", "Comic Sans MS", cursive; }
+    .wrap { width: min(1120px,calc(100% - 32px)); margin-inline: auto; }
     .topbar {
-      position: sticky;
-      top: 0;
-      z-index: 50;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 14px;
-      padding: 13px clamp(16px,4vw,44px);
-      background: color-mix(in srgb, var(--paper) 90%, transparent);
-      border-bottom: 1px solid var(--border);
-      backdrop-filter: blur(18px);
+      position: sticky; top: 0; z-index: 40; display: flex; align-items: center; gap: 15px;
+      justify-content: space-between; flex-wrap: wrap; padding: 10px max(18px,calc((100% - 1120px)/2));
+      background: color-mix(in srgb,var(--solid) 72%,transparent);
+      backdrop-filter: blur(20px); border-bottom: 1px solid var(--border);
     }
-
-    .brand { font-weight: 900; letter-spacing: -.03em; }
-    .theme-switcher { display: flex; gap: 8px; flex-wrap: wrap; justify-content: flex-end; }
-
+    .brand { font-size: 1.08rem; font-weight: 900; white-space: nowrap; letter-spacing: -.04em; }
+    .brand span { color: var(--accent); }
+    .navlinks { display: flex; align-items: center; justify-content: center; gap: 6px; flex-wrap: wrap; }
+    .navlinks a { text-decoration: none; font-size: .78rem; font-weight: 800; padding: 9px 11px; border-radius: 999px; transition: background .2s; }
+    .navlinks a:hover, .navlinks a:focus-visible { background: color-mix(in srgb,var(--accent2) 28%,transparent); }
+    .themes { display: flex; gap: 5px; }
     .theme-dot {
-      width: 42px;
-      height: 42px;
-      padding: 0;
-      display: grid;
-      place-items: center;
-      border: 1px solid rgba(255,255,255,.82);
-      border-radius: 14px;
-      cursor: pointer;
-      font-size: 1.35rem;
-      line-height: 1;
-      color: inherit;
-      background: color-mix(in srgb, var(--paper-solid) 74%, transparent);
-      box-shadow: 0 7px 20px rgba(0,0,0,.13);
-      backdrop-filter: blur(12px);
-      transition: transform .22s ease, outline .22s ease, box-shadow .22s ease, background .22s ease;
+      width: 32px; height: 32px; padding: 0; display: grid; place-items: center; font-size: 1.04rem;
+      border: 1px solid var(--border); border-radius: 50%; background: color-mix(in srgb,var(--solid) 70%,transparent);
+      transition: transform .2s, box-shadow .2s;
     }
-
-    .theme-dot:hover {
-      transform: translateY(-3px) scale(1.1) rotate(-4deg);
-      box-shadow: 0 11px 24px rgba(0,0,0,.18);
-    }
-
-    .theme-dot.active {
-      transform: translateY(-2px) scale(1.08);
-      outline: 3px solid color-mix(in srgb, var(--accent) 52%, white);
-      background: color-mix(in srgb, var(--accent) 18%, var(--paper-solid));
-      animation: themePulse 2.4s ease-in-out infinite;
-    }
-
-    @keyframes themePulse {
-      0%,100% { box-shadow: 0 7px 20px rgba(0,0,0,.13); }
-      50% { box-shadow: 0 0 0 7px color-mix(in srgb, var(--accent) 14%, transparent), 0 11px 26px rgba(0,0,0,.16); }
-    }
-
-    .theme-burst {
-      position: fixed;
-      z-index: 220;
-      pointer-events: none;
-      animation: themeFloat var(--duration, 1.8s) ease-out forwards;
-      font-size: var(--size, 26px);
-      left: var(--left, 50vw);
-      top: var(--top, 50vh);
-      filter: drop-shadow(0 6px 8px rgba(0,0,0,.14));
-    }
-
-    @keyframes themeFloat {
-      0% { opacity: 0; transform: translate(-50%,-50%) scale(.45) rotate(0deg); }
-      20% { opacity: 1; }
-      100% { opacity: 0; transform: translate(var(--x, 0px), var(--y, -160px)) scale(1.25) rotate(var(--spin, 120deg)); }
-    }
-
-    body.theme-transition::after {
-      content: "";
-      position: fixed;
-      inset: 0;
-      z-index: 180;
-      pointer-events: none;
-      background: color-mix(in srgb, var(--accent) 16%, transparent);
-      animation: themeFlash .58s ease;
-    }
-
-    @keyframes themeFlash {
-      0% { opacity: 0; }
-      35% { opacity: .7; }
-      100% { opacity: 0; }
-    }
-
+    .theme-dot:hover { transform: translateY(-3px); }
+    .theme-dot.active { box-shadow: 0 0 0 2px var(--accent); transform: translateY(-2px); }
     .hero {
-      min-height: 88vh;
-      display: grid;
-      place-items: center;
-      padding: 88px 20px 64px;
-      text-align: center;
+      min-height: 76vh; display: flex; align-items: center; justify-content: center;
+      position: relative; overflow: hidden; padding: 85px 15px 85px; text-align: center;
     }
-
-    .hero-inner { width: min(920px,100%); }
-
-    .pill {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 9px 14px;
-      border-radius: 999px;
-      border: 1px solid var(--border);
-      background: var(--paper);
-      backdrop-filter: blur(14px);
-      color: var(--muted);
-      font-weight: 800;
-      box-shadow: 0 10px 30px rgba(0,0,0,.08);
+    .hero::before, .hero::after {
+      content: ""; pointer-events: none; position: absolute; width: min(44vw,480px); aspect-ratio: 1;
+      border-radius: 50%; filter: blur(7px); opacity: .33;
+      background: radial-gradient(circle,var(--accent2),transparent 70%);
     }
-
-    h1 {
-      margin: 24px 0 18px;
-      font-size: clamp(3.3rem,9vw,7.2rem);
-      line-height: .92;
-      letter-spacing: -.07em;
-    }
-
-    .gradient {
-      background: linear-gradient(90deg,var(--accent),var(--accent2));
-      -webkit-background-clip: text;
-      background-clip: text;
-      color: transparent;
-    }
-
-    .subtitle {
-      width: min(700px,100%);
-      margin: 0 auto 30px;
-      color: var(--muted);
-      font-size: clamp(1.05rem,2.2vw,1.34rem);
-      line-height: 1.68;
-    }
-
+    .hero::before { top: -155px; left: -145px; }
+    .hero::after { bottom: -240px; right: -80px; }
+    .hero-inner { position: relative; z-index: 1; width: min(850px,100%); }
+    .hero-animals { font-size: clamp(2.2rem,5vw,3.5rem); letter-spacing: .13em; margin-bottom: 13px; filter: drop-shadow(0 6px 8px rgba(0,0,0,.1)); }
+    .eyebrow { display: inline-flex; gap: 8px; align-items: center; padding: 9px 15px; font-size: .83rem; font-weight: 900; letter-spacing: .08em; text-transform: uppercase; background: var(--paper); border: 1px solid var(--border); border-radius: 999px; }
+    h1 { margin: 23px 0 15px; font-size: clamp(3.35rem,9vw,7rem); letter-spacing: -.078em; line-height: .99; }
+    .gradient { background: linear-gradient(110deg,var(--accent),color-mix(in srgb,var(--accent) 55%,#ed8fab)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+    .subtitle { margin: 0 auto 27px; width: min(680px,100%); color: var(--muted); line-height: 1.7; font-size: clamp(1.01rem,2.2vw,1.23rem); }
+    .hero-date { color: var(--muted); font-weight: 750; font-size: .93rem; margin-bottom: 25px; }
     .actions { display: flex; justify-content: center; flex-wrap: wrap; gap: 12px; }
-
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 8px;
-      padding: 14px 22px;
-      border: 0;
-      border-radius: 999px;
-      text-decoration: none;
-      font-weight: 900;
-      cursor: pointer;
-      transition: transform .2s ease, box-shadow .2s ease;
-    }
-
+    .btn { display: inline-flex; justify-content: center; align-items: center; gap: 8px; border: 0; border-radius: 999px; padding: 14px 21px; text-decoration: none; font-weight: 900; transition: transform .2s, box-shadow .2s; }
     .btn:hover { transform: translateY(-3px); }
-    .btn-primary { color: white; background: linear-gradient(135deg,var(--accent),var(--accent2)); box-shadow: 0 15px 32px color-mix(in srgb,var(--accent) 34%,transparent); }
-    .btn-secondary { color: var(--text); background: var(--paper); border: 1px solid var(--border); backdrop-filter: blur(14px); }
-
-    main { width: min(1120px,calc(100% - 28px)); margin: 0 auto 72px; }
-
+    .btn-primary { color: white; background: linear-gradient(120deg,var(--accent),var(--accent2)); box-shadow: 0 12px 30px color-mix(in srgb,var(--accent) 28%,transparent); }
+    .btn-light { background: var(--paper); border: 1px solid var(--border); color: var(--text); box-shadow: 0 7px 21px rgba(0,0,0,.04); }
+    .scroll-cue { display: block; margin-top: 34px; font-size: .78rem; letter-spacing: .08em; color: var(--muted); }
+    main { padding-bottom: 52px; }
     .section {
-      position: relative;
-      overflow: hidden;
-      margin: 26px 0;
-      padding: clamp(24px,4vw,44px);
-      border: 1px solid var(--border);
-      border-radius: 30px;
-      background: var(--paper);
-      box-shadow: var(--shadow);
-      backdrop-filter: blur(20px);
+      position: relative; padding: clamp(24px,4vw,43px); margin: 26px 0; border: 1px solid var(--border);
+      border-radius: 29px; background: var(--paper); box-shadow: var(--shadow); backdrop-filter: blur(16px);
     }
-
-    .section::after {
-      content: "";
-      position: absolute;
-      top: -80px;
-      right: -70px;
-      width: 200px;
-      height: 200px;
-      border-radius: 50%;
-      pointer-events: none;
-      background: radial-gradient(circle,color-mix(in srgb,var(--accent) 20%,transparent),transparent 68%);
-    }
-
-    .section h2 { margin: 0 0 8px; font-size: clamp(1.85rem,4vw,2.8rem); letter-spacing: -.045em; }
-    .section p { line-height: 1.72; }
-    .muted { color: var(--muted); }
+    .section h2 { margin: 0 0 8px; font-size: clamp(1.9rem,4.4vw,2.9rem); letter-spacing: -.052em; line-height: 1.1; }
     .section-heading { margin-bottom: 24px; }
-
-    .message-grid { display: grid; grid-template-columns: 1.1fr .9fr; gap: 28px; align-items: center; }
-    .quote { margin: 0; font-size: clamp(1.18rem,2.3vw,1.52rem); line-height: 1.72; }
-
-    .status-card {
-      padding: 25px;
-      border-radius: 24px;
-      border: 1px solid var(--border);
-      background: linear-gradient(135deg,color-mix(in srgb,var(--accent) 15%,var(--paper-solid)),color-mix(in srgb,var(--accent2) 12%,var(--paper-solid)));
+    .section-heading p { margin: 6px 0 0; color: var(--muted); line-height: 1.6; }
+    .section p { line-height: 1.75; }
+    .twocol { display: grid; grid-template-columns: 1.05fr .95fr; gap: 30px; align-items: center; }
+    .letter-preview { font-size: clamp(1.06rem,2.3vw,1.3rem); line-height: 1.7; }
+    .envelope {
+      padding: 30px; text-align: center; border: 1px solid var(--border); border-radius: 25px;
+      background: linear-gradient(140deg,color-mix(in srgb,var(--accent2) 29%,white),white);
+      box-shadow: 0 18px 40px color-mix(in srgb,var(--accent) 14%,transparent);
     }
-
-    .scrapbook {
-      display: grid;
-      grid-template-columns: repeat(3,minmax(0,1fr));
-      gap: clamp(18px,3vw,32px);
-      padding: 12px 4px 8px;
-    }
-
-    .polaroid {
-      position: relative;
-      border: 0;
-      padding: 12px 12px 50px;
-      background: #fff;
-      color: #2c2428;
-      box-shadow: 0 18px 38px rgba(0,0,0,.2);
-      cursor: pointer;
-      transform: rotate(var(--tilt));
-      transition: transform .28s ease, box-shadow .28s ease;
-    }
-
-    .polaroid:nth-child(1) { --tilt: -2.5deg; }
-    .polaroid:nth-child(2) { --tilt: 1.8deg; }
-    .polaroid:nth-child(3) { --tilt: -1deg; }
-    .polaroid:nth-child(4) { --tilt: 2.8deg; }
-    .polaroid:nth-child(5) { --tilt: -1.8deg; }
-    .polaroid:nth-child(6) { --tilt: 1.2deg; }
-    .polaroid:nth-child(7) { --tilt: -2deg; }
-    .polaroid:nth-child(8) { --tilt: 2deg; }
-    .polaroid:nth-child(9) { --tilt: -.8deg; }
-
-    .polaroid:hover { transform: rotate(0deg) translateY(-9px) scale(1.025); box-shadow: 0 26px 48px rgba(0,0,0,.26); z-index: 2; }
-
-    .polaroid img {
-      width: 100%;
-      aspect-ratio: 4/5;
-      object-fit: cover;
-      background: #eee;
-    }
-
-    .polaroid-label {
-      position: absolute;
-      left: 12px;
-      right: 12px;
-      bottom: 13px;
-      font-family: "Bradley Hand", "Comic Sans MS", cursive;
-      font-size: 1.05rem;
-      font-weight: 700;
-      text-align: center;
-    }
-
-    .tape {
-      position: absolute;
-      z-index: 3;
-      top: -10px;
-      left: 50%;
-      width: 90px;
-      height: 24px;
-      transform: translateX(-50%) rotate(-3deg);
-      background: rgba(255,235,170,.74);
-      box-shadow: 0 2px 5px rgba(0,0,0,.09);
-    }
-
-    .timeline { display: grid; gap: 15px; }
-    .timeline-item { display: grid; grid-template-columns: 50px 1fr; gap: 14px; padding: 18px; border: 1px solid var(--border); border-radius: 20px; background: color-mix(in srgb,var(--paper-solid) 72%,transparent); }
-    .timeline-icon { width: 50px; height: 50px; display: grid; place-items: center; border-radius: 17px; background: linear-gradient(135deg,var(--accent),var(--accent2)); color: white; font-size: 1.3rem; }
-    .timeline-item h3 { margin: 0 0 5px; }
+    .envelope-icon { font-size: 4.2rem; margin-bottom: 8px; }
+    .envelope h3 { margin: 0 0 10px; font-size: 1.3rem; }
+    .envelope p { margin: 0 0 20px; color: var(--muted); }
+    .letter-full { display: none; border-top: 1px solid color-mix(in srgb,var(--accent) 17%,transparent); margin-top: 26px; padding-top: 23px; max-width: 840px; }
+    .letter-full.open { display: block; animation: rise .55s ease both; }
+    .letter-full p { font-size: 1.065rem; line-height: 1.9; }
+    .letter-sign { font-weight: 900; font-size: 1.15rem; color: var(--accent); }
+    .stats { display: grid; grid-template-columns: repeat(5,1fr); gap: 11px; }
+    .stat { text-align: center; background: color-mix(in srgb,var(--solid) 71%,transparent); border: 1px solid var(--border); border-radius: 19px; padding: 23px 10px; }
+    .stat .stat-icon { display: block; font-size: 1.35rem; }
+    .stat strong { display: block; color: var(--accent); font-size: clamp(1.5rem,3vw,2.2rem); margin: 9px 0 4px; line-height: 1; }
+    .stat span:last-child { font-size: .87rem; color: var(--muted); }
+    .timeline { position: relative; display: grid; gap: 14px; }
+    .timeline-item { display: grid; grid-template-columns: 56px 1fr; gap: 16px; align-items: center; padding: 18px; background: color-mix(in srgb,var(--solid) 70%,transparent); border: 1px solid var(--border); border-radius: 19px; }
+    .timeline-icon { display: grid; place-items: center; height: 55px; width: 55px; border-radius: 17px; color: white; background: linear-gradient(135deg,var(--accent),var(--accent2)); font-size: 1.45rem; }
+    .timeline-item h3 { margin: 0 0 5px; font-size: 1.1rem; }
     .timeline-item p { margin: 0; color: var(--muted); }
-
-    .playlist { display: grid; grid-template-columns: 230px 1fr; gap: 28px; align-items: center; }
-    .cover { aspect-ratio: 1; border-radius: 26px; display: grid; place-items: center; font-size: 4.2rem; color: white; background: linear-gradient(135deg,var(--accent),var(--accent2)); box-shadow: 0 20px 38px color-mix(in srgb,var(--accent) 28%,transparent); }
-    .tracks { display: grid; gap: 9px; margin: 18px 0 22px; }
-    .track { display: flex; gap: 11px; align-items: center; padding: 11px 13px; border-radius: 14px; border: 1px solid var(--border); background: color-mix(in srgb,var(--paper-solid) 72%,transparent); }
-    .track b { color: var(--muted); min-width: 26px; }
-
-    .stats { display: grid; grid-template-columns: repeat(4,1fr); gap: 14px; }
-    .stat { text-align: center; padding: 24px 14px; border-radius: 22px; border: 1px solid var(--border); background: color-mix(in srgb,var(--paper-solid) 75%,transparent); }
-    .stat strong { display: block; font-size: 2.1rem; background: linear-gradient(90deg,var(--accent),var(--accent2)); -webkit-background-clip: text; color: transparent; }
-    .stat span { color: var(--muted); }
-
+    .scrapbook { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: clamp(17px,3vw,31px); padding: 15px 8px 10px; }
+    .polaroid { position: relative; display: block; width: 100%; text-align: left; border: 0; color: #34262d; background: #fff; padding: 11px 11px 47px; box-shadow: 0 16px 32px rgba(43,29,36,.19); transform: rotate(var(--tilt,-1deg)); transition: transform .23s,box-shadow .23s; }
+    .polaroid:nth-child(3n+1) { --tilt: -2.6deg; }
+    .polaroid:nth-child(3n+2) { --tilt: 2.1deg; }
+    .polaroid:nth-child(3n) { --tilt: -1deg; }
+    .polaroid:hover { transform: rotate(0) translateY(-7px) scale(1.015); box-shadow: 0 24px 43px rgba(43,29,36,.23); z-index: 2; }
+    .polaroid img { width: 100%; aspect-ratio: 4/5; object-fit: cover; background: #f7e2e8; }
+    .polaroid .tape { position: absolute; z-index: 1; left: 50%; top: -10px; transform: translateX(-50%) rotate(-3deg); width: 82px; height: 22px; background: rgba(245,224,175,.77); }
+    .polaroid-label { position: absolute; left: 8px; right: 8px; bottom: 12px; text-align: center; font-weight: 800; font-size: clamp(.77rem,1.4vw,1rem); }
+    .disney-intro { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; align-items: center; }
+    .disney-copy { padding: 12px 10px; }
+    .disney-copy .kicker { font-weight: 900; color: var(--accent); letter-spacing: .08em; text-transform: uppercase; font-size: .81rem; }
+    .disney-copy h2 { margin: 12px 0; }
+    .disney-copy p { color: var(--muted); }
+    .disney-feature { min-height: 235px; display: grid; place-items: center; text-align: center; padding: 24px; color: #fff; border-radius: 24px; background: linear-gradient(145deg,#6e3c86,#ca6b9a 60%,#e7b583); position: relative; overflow: hidden; }
+    .disney-feature::before { content: "✧     ✦      ✧     ✦"; position: absolute; left: 0; right: 0; top: 25px; font-size: 1.6rem; opacity: .75; letter-spacing: 18px; }
+    .disney-feature .earth { font-size: 5rem; filter: drop-shadow(0 8px 13px rgba(0,0,0,.22)); }
+    .disney-feature strong { display: block; font-size: 1.2rem; margin-top: 6px; }
+    .disney-photos { display: grid; grid-template-columns: repeat(3,1fr); gap: 14px; margin-top: 24px; }
+    .disney-photo { border: 1px solid var(--border); border-radius: 19px; overflow: hidden; background: color-mix(in srgb,var(--solid) 76%,transparent); }
+    .disney-photo-visual { position: relative; aspect-ratio: 4/3; display: grid; place-items: center; overflow: hidden; background: linear-gradient(135deg,#926aaf,#e7a0b6); }
+    .disney-photo:nth-child(2) .disney-photo-visual { background: linear-gradient(135deg,#a786b8,#f0bc94); }
+    .disney-photo:nth-child(3) .disney-photo-visual { background: linear-gradient(135deg,#5976aa,#d887ad); }
+    .disney-photo-visual span { font-size: 3rem; }
+    .disney-photo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+    .disney-photo p { font-size: .93rem; font-weight: 800; margin: 12px 14px; }
+    .disney-photo img.is-missing { display: none; }
+    .reasons-box { display: grid; grid-template-columns: .9fr 1.1fr; gap: 25px; align-items: center; }
+    .reason-display { min-height: 160px; border-radius: 22px; padding: 27px; display: grid; place-items: center; text-align: center; border: 1px solid var(--border); background: linear-gradient(135deg,color-mix(in srgb,var(--accent2) 24%,white),var(--solid)); }
+    .reason-display strong { font-size: clamp(1.17rem,2.6vw,1.45rem); line-height: 1.55; }
+    .reason-explainer p { color: var(--muted); }
     .notes { display: grid; grid-template-columns: repeat(4,1fr); gap: 12px; }
-    .note { min-height: 105px; border: 1px solid var(--border); border-radius: 20px; background: color-mix(in srgb,var(--paper-solid) 75%,transparent); color: var(--text); font-size: 2rem; cursor: pointer; transition: .22s ease; }
-    .note:hover { transform: translateY(-5px) rotate(-1deg); box-shadow: 0 14px 28px rgba(0,0,0,.1); }
-
-    .reason-box { text-align: center; padding: 28px; border-radius: 23px; border: 1px solid var(--border); background: color-mix(in srgb,var(--paper-solid) 74%,transparent); }
-    #reason { min-height: 64px; font-size: 1.35rem; font-weight: 800; }
-    .finale { text-align: center; }
-    .finale h2 { font-size: clamp(2.5rem,6vw,4.3rem); }
-    footer { text-align: center; padding: 0 20px 48px; color: var(--muted); }
-
-    .modal {
-      position: fixed;
-      inset: 0;
-      z-index: 100;
-      display: none;
-      place-items: center;
-      padding: 20px;
-      background: rgba(8,7,12,.84);
-      backdrop-filter: blur(12px);
+    .note { min-height: 111px; border: 1px solid var(--border); border-radius: 19px; font-size: 2.1rem; background: color-mix(in srgb,var(--solid) 80%,transparent); transition: transform .2s,box-shadow .2s; }
+    .note:hover { transform: translateY(-4px) rotate(-2deg); box-shadow: 0 14px 24px rgba(0,0,0,.09); }
+    .private {
+      overflow: hidden; background: radial-gradient(circle at 80% 10%,#76314f,transparent 50%),linear-gradient(125deg,var(--dark),#4d1f37);
+      color: #fff0f4; border: 1px solid rgba(255,255,255,.13); box-shadow: 0 26px 64px rgba(40,9,29,.25);
     }
-
-    .modal.open { display: grid; }
-    .modal-card { width: min(900px,100%); max-height: 92vh; overflow: hidden; position: relative; border-radius: 24px; background: var(--paper-solid); box-shadow: 0 35px 100px rgba(0,0,0,.5); }
-    .modal-card img { width: 100%; max-height: 74vh; object-fit: contain; background: #090909; }
-    .modal-caption { padding: 18px 66px 20px 20px; font-weight: 800; }
-    .close { position: absolute; top: 14px; right: 14px; z-index: 2; width: 42px; height: 42px; border: 0; border-radius: 50%; background: rgba(0,0,0,.65); color: white; cursor: pointer; font-size: 1.15rem; }
-
-    .toast { position: fixed; left: 50%; bottom: 28px; z-index: 140; max-width: min(520px,calc(100% - 32px)); padding: 15px 18px; border-radius: 16px; background: #17131d; color: white; text-align: center; box-shadow: 0 18px 45px rgba(0,0,0,.3); opacity: 0; pointer-events: none; transform: translate(-50%,18px); transition: .28s ease; }
+    .private::before { content: "♡"; position: absolute; right: -24px; bottom: -90px; color: rgba(255,255,255,.08); font-size: 24rem; line-height: 1; pointer-events: none; }
+    .private .section-heading p, .private p { color: #f1cedc; }
+    .private-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; align-items: center; }
+    .private-lock { padding: 27px; border-radius: 22px; background: rgba(255,255,255,.09); border: 1px solid rgba(255,255,255,.23); backdrop-filter: blur(12px); }
+    .private-lock .lock-icon { font-size: 2rem; display: block; margin-bottom: 7px; }
+    .private-lock h3 { margin: 0 0 6px; font-size: 1.4rem; }
+    .private-lock p { margin: 0 0 18px; }
+    .code-field { display: flex; gap: 8px; }
+    .code-field input { width: 100%; min-width: 0; padding: 13px 14px; border-radius: 13px; border: 1px solid rgba(255,255,255,.3); color: white; background: rgba(255,255,255,.12); }
+    .code-field input::placeholder { color: #edc4d2; }
+    .code-field button { border: none; padding: 12px 17px; border-radius: 13px; background: #f1a4bb; color: #4c1e31; font-weight: 900; }
+    .code-feedback { min-height: 21px; margin: 12px 0 0 !important; font-size: .88rem; }
+    .tease-list { display: grid; gap: 14px; }
+    .tease { display: flex; gap: 12px; align-items: start; font-size: 1.08rem; line-height: 1.62; }
+    .tease span { color: #ffb6ce; }
+    .confessions { display: none; margin-top: 25px; padding-top: 24px; border-top: 1px solid rgba(255,255,255,.2); }
+    .confessions.open { display: block; animation: rise .6s ease both; }
+    .confessions h3 { font-size: 1.35rem; margin: 0 0 8px; }
+    .confessions > p { margin: 0 0 18px; }
+    .confession-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 13px; }
+    .confession { min-height: 115px; display: grid; place-items: center; padding: 17px; border: 1px solid rgba(255,255,255,.2); border-radius: 17px; background: rgba(255,255,255,.08); color: #fff2f6; text-align: center; transition: background .2s,transform .2s; }
+    .confession:hover { transform: translateY(-2px); background: rgba(255,255,255,.14); }
+    .confession .hidden-msg { display: none; line-height: 1.6; }
+    .confession.revealed .hidden-msg { display: block; }
+    .confession.revealed .covered-msg { display: none; }
+    .private-note { display: block; margin-top: 18px; font-size: .8rem; color: #e7b9cb; }
+    .finale { text-align: center; padding-block: 68px; }
+    .finale .final-icons { font-size: 3rem; }
+    .finale h2 { font-size: clamp(2.5rem,6vw,4.2rem); }
+    .finale p { color: var(--muted); max-width: 600px; margin: 12px auto 25px; }
+    footer { text-align: center; color: var(--muted); padding: 10px 16px 38px; font-weight: 750; font-size: .87rem; }
+    .photo-modal { position: fixed; inset: 0; padding: 20px; background: rgba(25,12,23,.88); z-index: 100; display: none; place-items: center; backdrop-filter: blur(12px); }
+    .photo-modal.open { display: grid; }
+    .modal-card { position: relative; width: min(900px,100%); max-height: 93vh; border-radius: 23px; overflow: hidden; background: white; color: #4e3543; box-shadow: 0 35px 90px rgba(0,0,0,.4); }
+    .modal-card img { object-fit: contain; width: 100%; max-height: 76vh; background: #18151a; }
+    .modal-caption { padding: 18px 65px 19px 21px; font-weight: 800; }
+    .modal-close { position: absolute; top: 13px; right: 13px; width: 43px; height: 43px; border: 0; border-radius: 50%; background: rgba(0,0,0,.68); color: #fff; font-size: 1.1rem; }
+    .toast { position: fixed; bottom: 23px; left: 50%; transform: translate(-50%,16px); opacity: 0; pointer-events: none; max-width: calc(100% - 30px); padding: 13px 19px; text-align: center; color: #fff; background: #321b2d; border-radius: 15px; box-shadow: 0 15px 36px rgba(0,0,0,.28); transition: .25s; z-index: 120; }
     .toast.show { opacity: 1; transform: translate(-50%,0); }
-
-    .floating { position: fixed; top: -30px; z-index: 130; pointer-events: none; animation: fall linear forwards; }
-    @keyframes fall { to { transform: translateY(110vh) rotate(420deg); opacity: 0; } }
-    @keyframes reveal { from { opacity: 0; transform: translateY(22px); } to { opacity: 1; transform: translateY(0); } }
-    .reveal { opacity: 0; transform: translateY(22px); }
-    .reveal.visible { animation: reveal .72s ease forwards; }
-
-    @media (max-width: 860px) {
-      .message-grid, .playlist { grid-template-columns: 1fr; }
-      .cover { max-width: 230px; }
-      .scrapbook { grid-template-columns: repeat(2,minmax(0,1fr)); }
-      .stats, .notes { grid-template-columns: repeat(2,1fr); }
+    .floating { position: fixed; top: -35px; pointer-events: none; z-index: 105; animation: fall linear forwards; }
+    .theme-burst { position: fixed; z-index: 110; pointer-events: none; font-size: var(--size,24px); left: var(--left,50%); top: var(--top,50%); animation: burst var(--duration,1.6s) ease-out forwards; }
+    .reveal { opacity: 0; transform: translateY(16px); }
+    .reveal.visible { animation: rise .68s ease forwards; }
+    @keyframes rise { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes fall { to { transform: translateY(110vh) rotate(360deg); opacity: 0; } }
+    @keyframes burst { from { opacity: 0; transform: translate(-50%,-50%) scale(.5); } 20% { opacity: 1; } to { opacity: 0; transform: translate(var(--x),var(--y)) rotate(var(--spin)); } }
+    @media (max-width: 920px) {
+      .topbar { justify-content: center; gap: 7px 12px; }
+      .navlinks { order: 3; width: 100%; }
+      .twocol,.disney-intro,.reasons-box { grid-template-columns: 1fr; }
+      .private-grid { grid-template-columns: 1fr; }
+      .stats { grid-template-columns: repeat(3,1fr); }
     }
-
-    @media (max-width: 560px) {
-      .topbar { align-items: flex-start; }
-      .theme-switcher { max-width: 175px; flex-wrap: wrap; justify-content: flex-end; }
-      .hero { min-height: 80vh; padding-top: 70px; }
-      .section { border-radius: 23px; }
-      .scrapbook { grid-template-columns: 1fr 1fr; gap: 14px; }
-      .polaroid { padding: 8px 8px 40px; }
-      .polaroid-label { font-size: .88rem; left: 8px; right: 8px; bottom: 10px; }
+    @media (max-width: 650px) {
+      .navlinks a { font-size: .73rem; padding: 7px 8px; }
+      .hero { min-height: 67vh; padding: 66px 16px; }
+      .section { border-radius: 22px; padding: 23px 18px; }
+      .scrapbook { grid-template-columns: repeat(2,minmax(0,1fr)); gap: 17px; }
+      .polaroid { padding: 8px 8px 41px; }
+      .disney-photos { grid-template-columns: 1fr; }
+      .disney-photo-visual { aspect-ratio: 16/9; }
+      .stats,.notes { grid-template-columns: repeat(2,1fr); }
+      .confession-grid { grid-template-columns: 1fr; }
+      .envelope { padding: 23px 15px; }
     }
-
     @media (prefers-reduced-motion: reduce) {
-      *,*::before,*::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+      *,*::before,*::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; scroll-behavior: auto !important; }
+      .reveal { opacity: 1; transform: none; }
     }
   </style>
 </head>
 <body data-theme="otter">
-  <nav class="topbar">
-    <div class="brand">Nathan + Jay</div>
-    <div class="theme-switcher" aria-label="Choose an animal theme">
-      <button class="theme-dot active" data-theme-choice="otter" title="Otter Mode" aria-label="Otter theme">🦦</button>
-      <button class="theme-dot" data-theme-choice="dinosaur" title="Dinosaur Mode" aria-label="Dinosaur theme">🦖</button>
-      <button class="theme-dot" data-theme-choice="sealion" title="Sea Lion Mode" aria-label="Sea lion theme">🦭</button>
-      <button class="theme-dot" data-theme-choice="meerkat" title="Meerkat Mode" aria-label="Meerkat theme">🐾</button>
-      <button class="theme-dot" data-theme-choice="giraffe" title="Giraffe Mode" aria-label="Giraffe theme">🦒</button>
+  <nav class="topbar" aria-label="Main navigation">
+    <a class="brand" href="#top" style="text-decoration:none">Nathan <span>♡</span> Jay</a>
+    <div class="navlinks">
+      <a href="#letter">💌 Letter</a>
+      <a href="#scrapbook">📸 Photos</a>
+      <a href="#disney">✨ Disney</a>
+      <a href="#memories">🫶 Memories</a>
+      <a href="#for-jay">🔒 For Jay</a>
+    </div>
+    <div class="themes" aria-label="Choose your animal theme">
+      <button type="button" class="theme-dot active" data-theme-choice="otter" title="Otter theme" aria-label="Otter theme">🦦</button>
+      <button type="button" class="theme-dot" data-theme-choice="dinosaur" title="Dinosaur theme" aria-label="Dinosaur theme">🦖</button>
+      <button type="button" class="theme-dot" data-theme-choice="sealion" title="Sea lion theme" aria-label="Sea lion theme">🦭</button>
+      <button type="button" class="theme-dot" data-theme-choice="meerkat" title="Meerkat theme" aria-label="Meerkat theme">🐾</button>
+      <button type="button" class="theme-dot" data-theme-choice="giraffe" title="Giraffe theme" aria-label="Giraffe theme">🦒</button>
     </div>
   </nav>
 
-<header class="hero">
+  <header class="hero" id="top">
     <div class="hero-inner">
-      <h1>Happy <span class="gradient">3 Months</span>, Babe</h1>
-
-      <p class="subtitle">
-        Three months of Jay and Nathan: more pictures, more memories,
-        more FaceTimes, and even more reasons I like you.
-      </p>
-
+      <div class="hero-animals" aria-hidden="true">🦦 ♡ 🦦</div>
+      <span class="eyebrow">Our little love story · chapter six</span>
+      <h1>Happy <span class="gradient">6 Months</span>, Babe ♡</h1>
+      <p class="subtitle">Six months of being your boyfriend, and somehow I still get butterflies. More FaceTimes, more adventures, more ridiculous little moments, and a whole lot more of me being completely obsessed with you.</p>
+      <p class="hero-date">May 4, 2026 — November 4, 2026 &nbsp; ♡ &nbsp; Nathan + Jay</p>
       <div class="actions">
-        <a class="btn btn-primary" href="#letter">Open your surprise</a>
-        <a class="btn btn-secondary" href="#album">Flip through our scrapbook</a>
+        <a class="btn btn-primary" href="#letter">💌 Open your love letter</a>
+        <a class="btn btn-light" href="#scrapbook">📷 Our memories</a>
       </div>
+      <span class="scroll-cue">↓ Keep scrolling, handsome. There's more.</span>
     </div>
-</header>
+  </header>
 
-  <main>
+  <main class="wrap">
     <section class="section reveal" id="letter">
-      <div class="message-grid">
+      <div class="twocol">
         <div>
           <div class="section-heading">
-            <h2>My message to you</h2>
-            <p class="muted">A little update for month three.</p>
+            <h2>A love letter to my favorite boy 💌</h2>
+            <p>Because six months deserves more than a regular text.</p>
           </div>
-          <p class="quote">I’m really grateful for these past three months with you. Even with distance, busy schedules, stress, and life being life, I still feel lucky that I get to call you mine. I love our laughs, our FaceTimes, our visits, and all the tiny moments that have become part of us.</p>
+          <p class="letter-preview">Babe, I made you another little corner of the internet. Not because any website could ever fit how much you mean to me, but because I wanted to try anyway.</p>
+          <p style="color:var(--muted)">This time, I have a little more to tell you. Open the envelope, okay?</p>
         </div>
-        <div class="status-card">
-          <p class="muted" style="margin-top:0">Current relationship status</p>
-          <h3 style="font-size:2rem;margin:.2rem 0">Boyfriend successfully upgraded</h3>
-          <p style="font-size:1.15rem;font-weight:900">Version 3.0 · still extremely cute</p>
-          <p style="margin-bottom:0">Certified boyfriend material 😘</p>
+        <div class="envelope">
+          <div class="envelope-icon" aria-hidden="true">💌</div>
+          <h3>To: Jay ♡</h3>
+          <p>From: your very clingy boyfriend</p>
+          <button type="button" class="btn btn-primary" id="openLetter" aria-expanded="false" aria-controls="fullLetter">Open my heart ♡</button>
         </div>
       </div>
-    </section>
-
-    <section class="section reveal" id="album">
-      <div class="section-heading">
-        <h2>Our little scrapbook</h2>
-        <p class="muted">Click a Polaroid to open the full picture.</p>
-      </div>
-
-      <div class="scrapbook">
-        <button class="polaroid" data-full="fxn 2026-07-18 09464619DD3621F4EC.JPG" data-caption="How I always look at you.">
-          <span class="tape"></span>
-          <img src="fxn 2026-07-18 09464619DD3621F4EC.JPG" alt="Jay posing indoors" />
-          <span class="polaroid-label">how can I not smile when I see you?</span>
-        </button>
-
-        <button class="polaroid" data-full="IMG_9692.jpg" data-caption="Richmond with you ❤️">
-          <span class="tape"></span>
-          <img src="IMG_9692.jpg" alt="Richmond memory" />
-          <span class="polaroid-label">you + Richmond</span>
-        </button>
-
-        <button class="polaroid" data-full="IMG_9701.jpg" data-caption="Another Richmond memory I want to keep.">
-          <span class="tape"></span>
-          <img src="IMG_9701.jpg" alt="Another Richmond memory" />
-          <span class="polaroid-label">me + Richmond</span>
-        </button>
-
-        <button class="polaroid" data-full="IMG_9726.jpg" data-caption="You looked so cute with flowers.">
-          <span class="tape"></span>
-          <img src="IMG_9726.jpg" alt="Jay holding flowers" />
-          <span class="polaroid-label">cute boy alert</span>
-        </button>
-
-        <button class="polaroid" data-full="IMG_9737.jpg" data-caption="A memorable moment that won't escape my mind.">
-          <span class="tape"></span>
-          <img src="IMG_9737.jpg" alt="Escape arcade memory" />
-          <span class="polaroid-label">our first escape room</span>
-        </button>
-
-        <button class="polaroid" data-full="IMG_9752.jpg" data-caption="This picture still makes me smile.">
-          <span class="tape"></span>
-          <img src="IMG_9752.jpg" alt="Jay holding something in a store" />
-          <span class="polaroid-label">you being you</span>
-        </button>
-
-        <button class="polaroid" data-full="IMG_9756.jpg" data-caption="Remember the barrel and the magnet? Yea...">
-          <span class="tape"></span>
-          <img src="IMG_9756.jpg" alt="Indoor memory" />
-          <span class="polaroid-label">a tiny moment I can't forget</span>
-        </button>
-
-        <button class="polaroid" data-full="IMG_6612.jpg" data-caption="You belong in every version of The Little Mermaid.">
-          <span class="tape"></span>
-          <img src="IMG_6612.jpg" alt="Colorful framed memory" />
-          <span class="polaroid-label">my favorite merman</span>
-        </button>
-
-        <!-- IMPORTANT: rename the second long JPG file to fxn 2026-07-17 2052475285FA48EDD1.jpeg before uploading. -->
-        <button class="polaroid" data-full="fxn 2026-07-17 2052475285FA48EDD1.jpeg" data-caption="Another memory with you.">
-          <span class="tape"></span>
-          <img src="fxn 2026-07-17 2052475285FA48EDD1.jpeg" alt="Month-three memory" />
-          <span class="polaroid-label">so aesthetically hot</span>
-        </button>
+      <div class="letter-full" id="fullLetter">
+        <p>My sweet boy,</p>
+        <p>Six months ago, on May 4, I got to call you my boyfriend. And even now, seeing your name light up my phone makes me smile like an absolute idiot. I love that, somehow, after all these months, you can still make me feel like the boy who first fell for you.</p>
+        <p>There have been miles between us, busy days, FaceTimes that I never want to end, and goodbyes where I already start counting down until the next hello. But there have also been so many wonderful moments: our time together in Richmond, our silly conversations, our kisses and cuddles, and getting to experience Disney and Epcot with you. I keep collecting all of these moments in my head because they feel so much more special with you in them.</p>
+        <p>I love your smile. I love your laugh. I love how handsome you are even when you aren't trying. I love getting to be soft and a little ridiculous around you. And, yes, I love being your hopelessly affectionate, occasionally dramatic, completely smitten boyfriend.</p>
+        <p>I don't need us to have every moment perfectly figured out. I just want us to keep showing up, learning each other, making memories, and finding new reasons to smile together. Six months is only the beginning of what I hope is a very, very long story.</p>
+        <p>Thank you for being you. Thank you for letting me love you. And thank you for being the person I get to call mine.</p>
+        <p class="letter-sign">Happy six months, babe. I love you. ♡<br />Forever your boy,<br />Nathan</p>
       </div>
     </section>
 
-    <section class="section reveal">
-      <div class="section-heading">
-        <h2>A trip down memory lane</h2>
-        <p class="muted">Don't worry, this is not the end of memory lane babe.</p>
-      </div>
-      <div class="timeline">
-        <div class="timeline-item"><div class="timeline-icon">📍</div><div><h3>Richmond together</h3><p>One more place that feels special now because I got to experience it with you.</p></div></div>
-        <div class="timeline-item"><div class="timeline-icon">📞</div><div><h3>Our FaceTimes</h3><p>Still one of my favorite parts of every week, even when neither of us has anything important to say.</p></div></div>
-        <div class="timeline-item"><div class="timeline-icon">📸</div><div><h3>All the little pictures</h3><p>I love that ordinary moments keep turning into things I want to save.</p></div></div>
-        <div class="timeline-item"><div class="timeline-icon">❤️</div><div><h3>August 4 · Three months</h3><p>Three months together, and I am still very happy that it is you.</p></div></div>
-      </div>
-    </section>
-
-    <section class="section reveal">
-      <div class="section-heading"><h2>Relationship statistics</h2><p class="muted">Peer-reviewed by myself and completely accurate.</p></div>
+    <section class="section reveal" id="numbers">
+      <div class="section-heading"><h2>Our relationship, by the numbers ♡</h2><p>Scientifically questionable. Romantically undeniable.</p></div>
       <div class="stats">
-        <div class="stat"><strong>3</strong><span>months together</span></div>
-        <div class="stat"><strong>∞</strong><span>times I miss you</span></div>
-        <div class="stat"><strong>100%</strong><span>would choose you again</span></div>
-        <div class="stat"><strong>Illegal</strong><span>amount of cute</span></div>
+        <div class="stat"><span class="stat-icon">🗓️</span><strong>6</strong><span>months official</span></div>
+        <div class="stat"><span class="stat-icon">💗</span><strong id="daysTogether">184</strong><span>days and counting</span></div>
+        <div class="stat"><span class="stat-icon">📱</span><strong>∞</strong><span>FaceTimes I want</span></div>
+        <div class="stat"><span class="stat-icon">🧳</span><strong>So many</strong><span>memories made</span></div>
+        <div class="stat"><span class="stat-icon">🦦</span><strong>2</strong><span>boys, one love story</span></div>
       </div>
     </section>
 
-<section class="section reveal">
-  <div class="section-heading">
-    <h2>Things I probably haven't said enough</h2>
-    <p class="muted">Click them all. I hid a few good ones.</p>
-  </div>
-
-  <div class="notes">
-    <button class="note" data-note="You are unfairly attractive.">😮‍💨</button>
-
-    <button class="note" data-note="You still make me nervous sometimes.">🫣</button>
-
-    <button class="note" data-note="Your hugs recharge my battery.">🫂</button>
-
-    <button class="note" data-note="I absolutely stare at you when you aren't looking.">👀</button>
-
-    <button class="note" data-note="Your smile is ridiculously cute.">😊</button>
-
-    <button class="note" data-note="You somehow make Richmond feel like home.">🏡</button>
-
-    <button class="note" data-note="I miss you more than I admit.">❤️</button>
-
-    <button class="note" data-note="I still get excited every time I see your name pop up.">📱</button>
-
-    <button class="note" data-note="You're still my favorite person to annoy.">😈</button>
-
-    <button class="note" data-note="I'd still choose you every single time.">💙</button>
-
-    <button class="note" data-note="You make it really difficult to behave.">😏</button>
-
-    <button class="note" data-note="I hope we never stop taking dumb pictures together.">📸</button>
-
-    <button class="note" data-note="Being your boyfriend is honestly pretty awesome.">🫶</button>
-
-    <button class="note" data-note="You're the cutest guy I've ever met.">🥹</button>
-
-    <button class="note" data-note="You look even better in person than in pictures.">🤍</button>
-
-    <button class="note" data-note="You're lucky you're cute.">🙄</button>
-
-    <button class="note" data-note="I'd kiss you right now if I could.">💋</button>
-
-    <button class="note" data-note="I think you're hot. There, I said it.">🔥</button>
-
-    <button class="note" data-note="Yes... I check out my own boyfriend.">😏</button>
-
-    <button class="note" data-note="I still think about that first kiss sometimes.">😘</button>
-
-    <button class="note" data-note="You wear 'boyfriend' really well.">🩵</button>
-
-    <button class="note" data-note="You somehow keep getting more attractive. Explain yourself.">📈</button>
-
-    <button class="note" data-note="I'd rather be bothering you than anyone else.">😂</button>
-
-    <button class="note" data-note="I hope we get our dachshund one day.">🐶</button>
-
-    <button class="note" data-note="I hope this is only chapter three out of a very long story.">📖</button>
-
-    <button class="note" data-note="Respectfully... you're ridiculously attractive.">🥵</button>
-
-    <button class="note" data-note="Achievement unlocked: World's cutest boyfriend.">🏆</button>
-
-    <button class="note" data-note="Okay... now come kiss me.">💖</button>
-  </div>
-</section>
-
-    <section class="section reveal">
-      <div class="section-heading"><h2>Reason generator</h2><p class="muted">For when you need a reminder.</p></div>
-      <div class="reason-box">
-        <p id="reason">Click the button for one reason I like you.</p>
-        <button class="btn btn-primary" id="reasonButton">Give me a reason</button>
+    <section class="section reveal" id="scrapbook">
+      <div class="section-heading"><h2>Our little scrapbook 📸</h2><p>Some of the pictures that make me stop and smile. Tap one to see it bigger.</p></div>
+      <div class="scrapbook" id="scrapbookGrid">
+        <!-- Your original 9 photos are loaded below by JavaScript; see PHOTO LIST near the end of the file. -->
       </div>
     </section>
 
-    <section class="section finale reveal">
-      <h2>Ready for FOUR months?</h2>
-      <p class="muted">There is only one right answer.</p>
-      <button class="btn btn-primary" id="yesButton">Yes, obviously (no Jay, there is no option for no)</button>
+    <section class="section reveal" id="disney">
+      <div class="disney-intro">
+        <div class="disney-copy">
+          <div class="kicker">Our latest adventure · October 2026</div>
+          <h2>Disney was magical. You were my favorite part. ✨</h2>
+          <p>My first Disney trip with you is one of those memories I'm going to hold close for a long time. The excitement, the wandering around, the Epcot lights, and just getting to be there with my favorite person — that's the part I wish I could replay.</p>
+          <p>I'm pretty sure no attraction could compete with how much I love being next to you. Yes, I know. That was disgustingly cute. You're welcome.</p>
+        </div>
+        <div class="disney-feature" aria-label="Epcot-themed memory art">
+          <div><div class="earth" aria-hidden="true">🌐✨</div><strong>Epcot, with my favorite human ♡</strong><span>October 29 – November 1, 2026</span></div>
+        </div>
+      </div>
+      <div class="disney-photos">
+        <!-- Upload your REAL photos to the GitHub repo with these exact filenames. If missing, these cards show a pretty fallback. -->
+        <div class="disney-photo"><div class="disney-photo-visual"><span aria-hidden="true">🌐</span><img src="epcot-us.jpg" alt="Nathan and Jay together at Epcot" loading="lazy" /></div><p>Us at Epcot ♡</p></div>
+        <div class="disney-photo"><div class="disney-photo-visual"><span aria-hidden="true">🏰</span><img src="disney-together.jpg" alt="Nathan and Jay making Disney memories" loading="lazy" /></div><p>The happiest place, with you ♡</p></div>
+        <div class="disney-photo"><div class="disney-photo-visual"><span aria-hidden="true">🌙</span><img src="disney-favorite.jpg" alt="One of Nathan and Jay's favorite Disney moments" loading="lazy" /></div><p>A moment I want to keep ♡</p></div>
+      </div>
+    </section>
+
+    <section class="section reveal" id="memories">
+      <div class="section-heading"><h2>A trip down our memory lane ♡</h2><p>Six months of little chapters, with so many more I can't wait to write.</p></div>
+      <div class="timeline">
+        <div class="timeline-item"><div class="timeline-icon">💘</div><div><h3>May 4 · We became official</h3><p>One very lucky boy got to call you his boyfriend. (Spoiler: it was me.)</p></div></div>
+        <div class="timeline-item"><div class="timeline-icon">🏡</div><div><h3>Richmond visits</h3><p>Every time I get to see you, I remember exactly why the trip is worth it.</p></div></div>
+        <div class="timeline-item"><div class="timeline-icon">📱</div><div><h3>Our FaceTimes</h3><p>The random check-ins, late-night conversations, sleepy goodnights, and all those moments when seeing your face makes my day better.</p></div></div>
+        <div class="timeline-item"><div class="timeline-icon">🎠</div><div><h3>Disney & Epcot together</h3><p>A whole new set of pictures, inside jokes, and memories — and another place that will always make me think of you.</p></div></div>
+        <div class="timeline-item"><div class="timeline-icon">🫶</div><div><h3>November 4 · Six months of us</h3><p>Half a year together. Still your boy. Still falling for you. Still looking forward to the next chapter.</p></div></div>
+      </div>
+    </section>
+
+    <section class="section reveal" id="reasons">
+      <div class="section-heading"><h2>A million little reasons I love you ♡</h2><p>Okay, I didn't code a million. But I could keep going.</p></div>
+      <div class="reasons-box">
+        <div class="reason-display"><strong id="reasonText" aria-live="polite">You still make me smile at my phone like it's the first week we met. ♡</strong></div>
+        <div class="reason-explainer">
+          <p>I could make a very long list of everything I adore about you. Your laugh, your face, your kindness, your sense of humor, the way you make me feel when we're together — and all the little details that only your boyfriend notices.</p>
+          <button type="button" class="btn btn-primary" id="reasonButton">Give me another reason ♡</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal" id="little-notes">
+      <div class="section-heading"><h2>Little things I needed to tell you 💬</h2><p>Click them. You know I can't keep my thoughts to myself.</p></div>
+      <div class="notes" id="notesGrid">
+        <button type="button" class="note" data-note="I still get butterflies when I see your name on my screen.">🦋</button>
+        <button type="button" class="note" data-note="I wish I could steal one of your hugs right now.">🫂</button>
+        <button type="button" class="note" data-note="You are ridiculously handsome. Like, it's actually unfair.">😮‍💨</button>
+        <button type="button" class="note" data-note="Epcot was fun, but being there with you made it unforgettable.">🌐</button>
+        <button type="button" class="note" data-note="I still think about our first kiss.">💋</button>
+        <button type="button" class="note" data-note="Your smile is an extremely effective distraction.">😊</button>
+        <button type="button" class="note" data-note="I miss your cuddles more than I'm willing to admit.">🥹</button>
+        <button type="button" class="note" data-note="I hope we get our little dachshund one day.">🐶</button>
+        <button type="button" class="note" data-note="Yes, I absolutely look at our pictures when I miss you.">📸</button>
+        <button type="button" class="note" data-note="I love being your boyfriend. Even when I'm being a little dramatic.">🎭</button>
+        <button type="button" class="note" data-note="You are still my favorite person to annoy.">😈</button>
+        <button type="button" class="note" data-note="Six months in, and I would still choose you all over again.">💗</button>
+      </div>
+    </section>
+
+    <section class="section private reveal" id="for-jay">
+      <div class="section-heading"><h2>🔒 Confessions of your very needy boyfriend</h2><p>A slightly more flirty, shamelessly gay little corner of the website. Just for you, babe.</p></div>
+      <div class="private-grid">
+        <div class="private-lock">
+          <span class="lock-icon" aria-hidden="true">💌</span>
+          <h3>For Jay's eyes only ♡</h3>
+          <p>Enter our anniversary date (MMDD) to unlock your boy's confessions.</p>
+          <form class="code-field" id="unlockForm">
+            <input type="text" id="anniversaryCode" inputmode="numeric" maxlength="4" autocomplete="off" placeholder="Our special date" aria-label="Our anniversary date, four digits" required />
+            <button type="submit">Unlock ♡</button>
+          </form>
+          <p class="code-feedback" id="codeFeedback" aria-live="polite"></p>
+        </div>
+        <div class="tease-list">
+          <div class="tease"><span>♡</span><div>Somehow, you're still the person who makes me blush the fastest.</div></div>
+          <div class="tease"><span>♡</span><div>I love when you take charge and I get to just be your soft, clingy boy.</div></div>
+          <div class="tease"><span>♡</span><div>I think about your kisses and cuddles far more than you realize.</div></div>
+          <div class="tease"><span>♡</span><div>And yes, I'm still completely obsessed with you.</div></div>
+        </div>
+      </div>
+      <div class="confessions" id="confessions">
+        <h3>Okay, handsome. You unlocked my thoughts. 😏</h3>
+        <p>Tap each heart to read a confession. Don't tease me too much about these, okay?</p>
+        <div class="confession-grid">
+          <button type="button" class="confession" aria-pressed="false"><span class="covered-msg">💋 Confession #1 · tap me</span><span class="hidden-msg">I think about being your good boy more often than I'll ever admit out loud. ♡</span></button>
+          <button type="button" class="confession" aria-pressed="false"><span class="covered-msg">😳 Confession #2 · tap me</span><span class="hidden-msg">Your confident voice makes me forget every clever thing I was about to say.</span></button>
+          <button type="button" class="confession" aria-pressed="false"><span class="covered-msg">🫶 Confession #3 · tap me</span><span class="hidden-msg">I love how safe it feels to be soft, needy, and completely myself with you.</span></button>
+          <button type="button" class="confession" aria-pressed="false"><span class="covered-msg">😈 Confession #4 · tap me</span><span class="hidden-msg">I really, really like when you take the lead. And yes, you can absolutely make me blush about it.</span></button>
+          <button type="button" class="confession" aria-pressed="false"><span class="covered-msg">🥺 Confession #5 · tap me</span><span class="hidden-msg">Sometimes I just want to curl up against you and have all your attention for a while.</span></button>
+          <button type="button" class="confession" aria-pressed="false"><span class="covered-msg">❤️ Confession #6 · tap me</span><span class="hidden-msg">My favorite part isn't even the flirting. It's knowing I get to be yours, and that you choose me too.</span></button>
+        </div>
+        <span class="private-note">A playful little code, not actual privacy protection. Anyone who can see the public site's source can read this section.</span>
+      </div>
+    </section>
+
+    <section class="section finale reveal" id="finale">
+      <div class="final-icons" aria-hidden="true">🦦 💗 🦦</div>
+      <h2>Ready for month seven, babe? ♡</h2>
+      <p>Six months down, and I still have a ridiculous amount of love to give you. Here's to more adventures, more sleepy calls, more hugs, more photos, and a whole lot more of us.</p>
+      <button type="button" class="btn btn-primary" id="yesButton">Always, baby ♡</button>
     </section>
   </main>
 
-  <footer>Made by Nathan for Jay ❤️</footer>
+  <footer>Made with an embarrassing amount of love by Nathan, for Jay. ♡ · November 4, 2026</footer>
 
-  <div class="modal" id="photoModal" aria-hidden="true">
-    <div class="modal-card">
-      <button class="close" id="closeModal" aria-label="Close photo">✕</button>
-      <img id="modalImage" src="" alt="Expanded memory" />
-      <div class="modal-caption" id="modalCaption"></div>
-    </div>
+  <div class="photo-modal" id="photoModal" role="dialog" aria-modal="true" aria-label="Photo viewer" aria-hidden="true">
+    <div class="modal-card"><button type="button" class="modal-close" id="closeModal" aria-label="Close photo">✕</button><img id="modalImage" alt="Enlarged couple memory" /><div class="modal-caption" id="modalCaption"></div></div>
   </div>
-
-  <div class="toast" id="toast"></div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
   <script>
-    const body = document.body;
-    const themeButtons = document.querySelectorAll('[data-theme-choice]');
-    const validThemes = ['otter','dinosaur','sealion','meerkat','giraffe'];
-    const savedTheme = localStorage.getItem('threeMonthTheme');
-    const startingTheme = validThemes.includes(savedTheme) ? savedTheme : 'otter';
+    // =============================================================
+    // PHOTO LIST: These first nine files are already in your 3-months
+    // GitHub repo. Keep the exact spelling and capitalization.
+    // To add scrapbook photos, add a file to the repo and add an entry.
+    // =============================================================
+    const photos = [
+      { file: 'fxn 2026-07-18 09464619DD3621F4EC.JPG', label: 'how can I not smile when I see you?', caption: 'Still looking at you like this. ♡' },
+      { file: 'IMG_9692.jpg', label: 'you + Richmond', caption: 'Every visit is worth it. ♡' },
+      { file: 'IMG_9701.jpg', label: 'me + Richmond', caption: 'A little part of our story. ♡' },
+      { file: 'IMG_9726.jpg', label: 'cute boy alert', caption: 'You and flowers. How was I supposed to cope? ♡' },
+      { file: 'IMG_9737.jpg', label: 'our first escape room', caption: 'Would absolutely get trapped in a room with you again. ♡' },
+      { file: 'IMG_9752.jpg', label: 'you being you', caption: 'My favorite kind of moment. ♡' },
+      { file: 'IMG_9756.jpg', label: 'the little things', caption: 'The barrel and the magnet — you know the one. ♡' },
+      { file: 'IMG_6612.jpg', label: 'my favorite merman', caption: 'My favorite guy under the sea (and everywhere else). ♡' },
+      { file: 'fxn 2026-07-17 2052475285FA48EDD1.jpeg', label: 'so aesthetically hot', caption: 'How are you this handsome? ♡' },
+      // NEW OPTIONAL PHOTOS: upload real files with these exact names.
+      // Missing optional files are automatically skipped in the scrapbook.
+      { file: 'epcot-us.jpg', label: 'Epcot with my boy', caption: 'Epcot was even more magical with you. ♡', optional: true },
+      { file: 'disney-together.jpg', label: 'our Disney adventure', caption: 'The happiest place with my favorite person. ♡', optional: true },
+      { file: 'disney-favorite.jpg', label: 'one more memory together', caption: 'Can we go back already? ♡', optional: true }
+    ];
 
-    setTheme(startingTheme, false);
-
-    themeButtons.forEach(button => {
-      button.addEventListener('click', () => setTheme(button.dataset.themeChoice, true));
-    });
-
-    function setTheme(theme, animate = true) {
-      if (!validThemes.includes(theme)) theme = 'otter';
-
-      body.dataset.theme = theme;
-      localStorage.setItem('threeMonthTheme', theme);
-
-      themeButtons.forEach(button => {
-        button.classList.toggle('active', button.dataset.themeChoice === theme);
-      });
-
-      if (animate) {
-        body.classList.remove('theme-transition');
-        void body.offsetWidth;
-        body.classList.add('theme-transition');
-        setTimeout(() => body.classList.remove('theme-transition'), 650);
-        launchThemeEffect(theme);
-      }
-    }
-
-    function launchThemeEffect(theme) {
-      const themeSymbols = {
-        otter: ['🦦','🫧','💧'],
-        dinosaur: ['🦖','🌿','🍃'],
-        sealion: ['🦭','🫧','🌊'],
-        meerkat: ['🐾','✨','🏜️'],
-        giraffe: ['🦒','✨','🌿']
-      };
-
-      const symbols = themeSymbols[theme] || ['✨'];
-
-      for (let i = 0; i < 24; i++) {
-        const burst = document.createElement('span');
-        burst.className = 'theme-burst';
-        burst.textContent = symbols[Math.floor(Math.random() * symbols.length)];
-        burst.style.setProperty('--left', (Math.random() * 100) + 'vw');
-        burst.style.setProperty('--top', (18 + Math.random() * 64) + 'vh');
-        burst.style.setProperty('--x', ((Math.random() - .5) * 260) + 'px');
-        burst.style.setProperty('--y', (-90 - Math.random() * 190) + 'px');
-        burst.style.setProperty('--spin', ((Math.random() - .5) * 420) + 'deg');
-        burst.style.setProperty('--size', (18 + Math.random() * 20) + 'px');
-        burst.style.setProperty('--duration', (1.25 + Math.random() * 1.2) + 's');
-        document.body.appendChild(burst);
-        setTimeout(() => burst.remove(), 2800);
-      }
-    }
-
+    const scrapbookGrid = document.getElementById('scrapbookGrid');
     const modal = document.getElementById('photoModal');
     const modalImage = document.getElementById('modalImage');
     const modalCaption = document.getElementById('modalCaption');
+    const modalClose = document.getElementById('closeModal');
+    let priorFocus = null;
 
-    document.querySelectorAll('.polaroid').forEach(card => {
+    function addPhoto(photo) {
+      const card = document.createElement('button');
+      card.type = 'button';
+      card.className = 'polaroid';
+      const tape = document.createElement('span'); tape.className = 'tape';
+      const picture = document.createElement('img');
+      picture.loading = 'lazy'; picture.src = photo.file; picture.alt = photo.label;
+      picture.addEventListener('error', () => {
+        // If an original asset is missing, display a graceful replacement.
+        const placeholder = document.createElement('div');
+        placeholder.style.cssText = 'aspect-ratio:4/5;display:grid;place-items:center;text-align:center;padding:18px;color:#8d5277;background:linear-gradient(135deg,#fae3ec,#f4c9dc);font-size:2.7rem';
+        placeholder.textContent = '♡';
+        picture.replaceWith(placeholder);
+        card.onclick = null;
+        card.disabled = true;
+        card.title = 'Photo file not found in GitHub repo: ' + photo.file;
+      }, { once: true });
+      const caption = document.createElement('span'); caption.className = 'polaroid-label'; caption.textContent = photo.label;
+      card.append(tape,picture,caption);
       card.addEventListener('click', () => {
-        modalImage.src = card.dataset.full;
-        modalCaption.textContent = card.dataset.caption;
-        modal.classList.add('open');
-        modal.setAttribute('aria-hidden','false');
+        if (card.disabled) return;
+        priorFocus = document.activeElement;
+        modalImage.src = photo.file;
+        modalCaption.textContent = photo.caption;
+        modal.classList.add('open'); modal.setAttribute('aria-hidden','false');
+        modalClose.focus();
       });
+      scrapbookGrid.appendChild(card);
+    }
+    photos.forEach(photo => {
+      if (!photo.optional) { addPhoto(photo); return; }
+      const test = new Image();
+      test.onload = () => addPhoto(photo);
+      test.src = photo.file;
     });
-
     function closePhoto() {
-      modal.classList.remove('open');
-      modal.setAttribute('aria-hidden','true');
+      modal.classList.remove('open'); modal.setAttribute('aria-hidden','true');
+      modalImage.removeAttribute('src');
+      if (priorFocus && typeof priorFocus.focus === 'function') priorFocus.focus();
     }
-
-    document.getElementById('closeModal').addEventListener('click', closePhoto);
+    modalClose.addEventListener('click',closePhoto);
     modal.addEventListener('click', event => { if (event.target === modal) closePhoto(); });
-    document.addEventListener('keydown', event => { if (event.key === 'Escape') closePhoto(); });
+    document.addEventListener('keydown', event => {
+      if (event.key === 'Escape' && modal.classList.contains('open')) closePhoto();
+      if (event.key === 'Tab' && modal.classList.contains('open')) { event.preventDefault(); modalClose.focus(); }
+    });
 
-    const toast = document.getElementById('toast');
-    let toastTimer;
+    // Disney cards show an attractive text/emoji fallback until you upload your photos.
+    document.querySelectorAll('.disney-photo img').forEach(img => {
+      img.addEventListener('error', () => img.classList.add('is-missing'), { once: true });
+    });
 
-    function showToast(message) {
-      toast.textContent = message;
-      toast.classList.add('show');
-      clearTimeout(toastTimer);
-      toastTimer = setTimeout(() => toast.classList.remove('show'), 3200);
+    // Five animal themes from the original website.
+    const validThemes = ['otter','dinosaur','sealion','meerkat','giraffe'];
+    const themeButtons = document.querySelectorAll('[data-theme-choice]');
+    let startingTheme = 'otter';
+    try { const saved = localStorage.getItem('sixMonthTheme') || localStorage.getItem('threeMonthTheme'); if (validThemes.includes(saved)) startingTheme = saved; } catch (_) {}
+    setTheme(startingTheme,false);
+    themeButtons.forEach(button => button.addEventListener('click', () => setTheme(button.dataset.themeChoice,true)));
+    function setTheme(theme,animate) {
+      if (!validThemes.includes(theme)) theme = 'otter';
+      document.body.dataset.theme = theme;
+      try { localStorage.setItem('sixMonthTheme',theme); } catch (_) {}
+      themeButtons.forEach(btn => btn.classList.toggle('active',btn.dataset.themeChoice === theme));
+      if (animate) launchThemeEffect(theme);
     }
-
-    document.querySelectorAll('[data-note]').forEach(button => {
-      button.addEventListener('click', () => showToast(button.dataset.note));
-    });
-
-    const reasons = [
-      "You're ridiculously attractive.",
-      "You somehow get more handsome every time I see you.",
-      "You look way too good in literally everything.",
-      "You make it really difficult to concentrate.",
-      "You have the cutest smile I've ever seen.",
-      "I definitely stare at you more than you realize.",
-      "You still give me butterflies.",
-      "I love being able to call you my boyfriend.",
-      "You're my favorite distraction.",
-      "I miss kissing you.",
-      "I never get tired of looking at you.",
-      "You make me count down the days until I see you again.",
-      "You're unfairly cute.",
-      "You make my heart race.",
-      "You're my favorite person to flirt with.",
-      "I still get excited every time I get to see you.",
-      "You're somehow even better in person.",
-      "I don't think I'll ever stop crushing on you.",
-      "You make every goodbye feel way too soon.",
-      "I'd still choose you every single time."
-    ];
-
-    document.getElementById('reasonButton').addEventListener('click', () => {
-      const randomReason = reasons[Math.floor(Math.random() * reasons.length)];
-      document.getElementById('reason').textContent = randomReason;
-    });
-
-    document.getElementById('yesButton').addEventListener('click', () => {
-      showToast('Correct answer. Month four incoming! ❤️');
-      celebrate();
-    });
-
-    function celebrate() {
-      const symbols = ['❤️','💕','✨','🌈','💌','🍌'];
-      for (let i = 0; i < 55; i++) {
-        const item = document.createElement('div');
-        item.className = 'floating';
-        item.textContent = symbols[Math.floor(Math.random() * symbols.length)];
-        item.style.left = Math.random() * 100 + 'vw';
-        item.style.fontSize = (Math.random() * 18 + 16) + 'px';
-        item.style.animationDuration = (Math.random() * 2.5 + 2.5) + 's';
-        document.body.appendChild(item);
-        setTimeout(() => item.remove(), 5500);
+    function launchThemeEffect(theme) {
+      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+      const symbols = {otter:['🦦','🫧','💗'],dinosaur:['🦖','🌿','💚'],sealion:['🦭','🌊','🫧'],meerkat:['🐾','✨','💛'],giraffe:['🦒','🌼','🧡']}[theme] || ['♡'];
+      for (let i=0;i<19;i++) {
+        const burst = document.createElement('span'); burst.className = 'theme-burst';
+        burst.textContent = symbols[Math.floor(Math.random()*symbols.length)];
+        burst.style.setProperty('--left',(8+Math.random()*84)+'vw');
+        burst.style.setProperty('--top',(15+Math.random()*65)+'vh');
+        burst.style.setProperty('--x',((Math.random()-.5)*290)+'px');
+        burst.style.setProperty('--y',(-90-Math.random()*180)+'px');
+        burst.style.setProperty('--spin',((Math.random()-.5)*420)+'deg');
+        burst.style.setProperty('--size',(18+Math.random()*17)+'px');
+        burst.style.setProperty('--duration',(1.25+Math.random()*.8)+'s');
+        document.body.appendChild(burst); setTimeout(()=>burst.remove(),2300);
       }
     }
 
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-          observer.unobserve(entry.target);
-        }
-      });
-    }, { threshold: .14 });
+    // Unlock letter.
+    document.getElementById('openLetter').addEventListener('click', () => {
+      const letter = document.getElementById('fullLetter');
+      const isOpen = letter.classList.toggle('open');
+      const button = document.getElementById('openLetter');
+      button.setAttribute('aria-expanded', String(isOpen));
+      button.textContent = isOpen ? 'Fold the letter ♡' : 'Open my heart ♡';
+      if (isOpen) letter.scrollIntoView({behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto':'smooth',block:'nearest'});
+    });
 
-    document.querySelectorAll('.reveal').forEach(section => observer.observe(section));
+    // Keep days together accurate even after the anniversary date.
+    const anniversaryStart = Date.UTC(2026,4,4);
+    const now = new Date();
+    const todayUTC = Date.UTC(now.getFullYear(),now.getMonth(),now.getDate());
+    document.getElementById('daysTogether').textContent = String(Math.max(0,Math.round((todayUTC-anniversaryStart)/86400000)));
+
+    const reasons = [
+      'You make even an ordinary day feel a little more exciting.',
+      'You still make me smile at my phone like it is the first week we met.',
+      'Your smile makes it very hard for me to act normal.',
+      'You have the kind of laugh I wish I could hear every day.',
+      'I love that you let me be the clingiest version of myself.',
+      'You make Richmond feel like somewhere special.',
+      'I love how easy it is to be silly with you.',
+      'You make me want to take more pictures so I can remember everything.',
+      'You are genuinely thoughtful, and I notice it.',
+      'Every time I see you, the distance feels worth it.',
+      'Your hugs make it hard to say goodbye.',
+      'You are unfairly attractive, and I have evidence.',
+      'You made our Disney trip even more magical.',
+      'You make me feel so lucky that I get to say “my boyfriend.”',
+      'I love our little jokes that nobody else would understand.',
+      'I like the quiet moments just as much as the adventures.',
+      'I still get excited about our next hello.',
+      'I would choose six more months with you, and then six more after that.',
+      'I love you for the little everyday things as much as the big ones.'
+    ];
+    let previousReason = -1;
+    document.getElementById('reasonButton').addEventListener('click', () => {
+      let index = Math.floor(Math.random()*reasons.length);
+      if (index===previousReason) index=(index+1)%reasons.length;
+      previousReason = index;
+      document.getElementById('reasonText').textContent = reasons[index]+' ♡';
+    });
+
+    const toast = document.getElementById('toast');
+    let toastTimer;
+    function showToast(message) {
+      toast.textContent = message; toast.classList.add('show'); clearTimeout(toastTimer);
+      toastTimer = setTimeout(() => toast.classList.remove('show'),3300);
+    }
+    document.querySelectorAll('.note').forEach(button => button.addEventListener('click', () => showToast(button.dataset.note)));
+
+    // This code gate is a cute reveal only — not genuine access control.
+    document.getElementById('unlockForm').addEventListener('submit', event => {
+      event.preventDefault();
+      const code = document.getElementById('anniversaryCode').value.trim();
+      const feedback = document.getElementById('codeFeedback');
+      if (code === '0504') {
+        feedback.textContent = 'Correct. Of course you remembered. 😘';
+        document.getElementById('confessions').classList.add('open');
+        document.getElementById('anniversaryCode').value = '';
+        document.getElementById('confessions').scrollIntoView({behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto':'smooth',block:'start'});
+        celebrate(21);
+      } else {
+        feedback.textContent = 'Babe! Think May 4… in four numbers. ♡';
+      }
+    });
+    document.querySelectorAll('.confession').forEach(card => card.addEventListener('click', () => {
+      const showing = card.classList.toggle('revealed');
+      card.setAttribute('aria-pressed',String(showing));
+    }));
+
+    document.getElementById('yesButton').addEventListener('click', () => {
+      showToast('Correct answer. Month seven, here we come! ♡'); celebrate(65);
+    });
+    function celebrate(count) {
+      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+      const symbols = ['💗','💕','✨','🦦','🌈','💌','♡'];
+      for (let i=0; i<count;i++) {
+        const item = document.createElement('span'); item.className = 'floating';
+        item.textContent = symbols[Math.floor(Math.random()*symbols.length)];
+        item.style.left = (Math.random()*100)+'vw';
+        item.style.fontSize = (15+Math.random()*18)+'px';
+        item.style.animationDuration = (2.7+Math.random()*2.5)+'s';
+        document.body.appendChild(item); setTimeout(()=>item.remove(),5500);
+      }
+    }
+
+    if ('IntersectionObserver' in window) {
+      const observer = new IntersectionObserver(entries => entries.forEach(entry => {
+        if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target); }
+      }),{threshold:.08});
+      document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    } else {
+      document.querySelectorAll('.reveal').forEach(el => el.classList.add('visible'));
+    }
   </script>
 </body>
 </html>
