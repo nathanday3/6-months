@@ -156,6 +156,8 @@
     .disney-copy h2 { margin: 12px 0; }
     .disney-copy p { color: var(--muted); }
     .disney-feature { min-height: 235px; display: grid; place-items: center; text-align: center; padding: 24px; color: #fff; border-radius: 24px; background: linear-gradient(145deg,#6e3c86,#ca6b9a 60%,#e7b583); position: relative; overflow: hidden; }
+    .disney-feature { background: linear-gradient(0deg,rgba(37,10,36,.66),rgba(37,10,36,.08) 65%),url("IMG_3497.jpg") center 45%/cover; min-height:320px; align-items:end; }
+    .disney-feature .feature-content { position:relative;z-index:1;text-shadow:0 2px 10px rgba(0,0,0,.55) }
     .disney-feature::before { content: "✧     ✦      ✧     ✦"; position: absolute; left: 0; right: 0; top: 25px; font-size: 1.6rem; opacity: .75; letter-spacing: 18px; }
     .disney-feature .earth { font-size: 5rem; filter: drop-shadow(0 8px 13px rgba(0,0,0,.22)); }
     .disney-feature strong { display: block; font-size: 1.2rem; margin-top: 6px; }
@@ -327,7 +329,7 @@
     <section class="section reveal" id="scrapbook">
       <div class="section-heading"><h2>Our little scrapbook 📸</h2><p>Some of the pictures that make me stop and smile. Tap one to see it bigger.</p></div>
       <div class="scrapbook" id="scrapbookGrid">
-        <!-- Your original 9 photos are loaded below by JavaScript; see PHOTO LIST near the end of the file. -->
+        <!-- Original nine photos + our three new Epcot photos are loaded below. -->
       </div>
     </section>
 
@@ -336,18 +338,18 @@
         <div class="disney-copy">
           <div class="kicker">Our latest adventure · October 2026</div>
           <h2>Disney was magical. You were my favorite part. ✨</h2>
-          <p>My first Disney trip with you is one of those memories I'm going to hold close for a long time. The excitement, the wandering around, the Epcot lights, and just getting to be there with my favorite person — that's the part I wish I could replay.</p>
+          <p>My first Disney trip with you is one of those memories I'm going to hold close for a long time. Our matching shirts, our ridiculous Goofy hats, that kiss in the sunshine, and getting to wander Epcot with my favorite person — that's the part I wish I could replay.</p>
           <p>I'm pretty sure no attraction could compete with how much I love being next to you. Yes, I know. That was disgustingly cute. You're welcome.</p>
         </div>
         <div class="disney-feature" aria-label="Epcot-themed memory art">
-          <div><div class="earth" aria-hidden="true">🌐✨</div><strong>Epcot, with my favorite human ♡</strong><span>October 29 – November 1, 2026</span></div>
+          <div class="feature-content"><strong>Epcot, with my favorite human ♡</strong><span>October 29 – November 1, 2026</span></div>
         </div>
       </div>
       <div class="disney-photos">
-        <!-- Upload your REAL photos to the GitHub repo with these exact filenames. If missing, these cards show a pretty fallback. -->
-        <div class="disney-photo"><div class="disney-photo-visual"><span aria-hidden="true">🌐</span><img src="epcot-us.jpg" alt="Nathan and Jay together at Epcot" loading="lazy" /></div><p>Us at Epcot ♡</p></div>
-        <div class="disney-photo"><div class="disney-photo-visual"><span aria-hidden="true">🏰</span><img src="disney-together.jpg" alt="Nathan and Jay making Disney memories" loading="lazy" /></div><p>The happiest place, with you ♡</p></div>
-        <div class="disney-photo"><div class="disney-photo-visual"><span aria-hidden="true">🌙</span><img src="disney-favorite.jpg" alt="One of Nathan and Jay's favorite Disney moments" loading="lazy" /></div><p>A moment I want to keep ♡</p></div>
+        <!-- Our real Epcot photos: uploaded alongside index.html. -->
+        <div class="disney-photo"><div class="disney-photo-visual"><span aria-hidden="true">🌐</span><img src="IMG_3627.jpg" alt="Nathan and Jay smiling in matching Goofy hats at the teacups" loading="lazy" /></div><p>Two goofy boys in the teacups ♡</p></div>
+        <div class="disney-photo"><div class="disney-photo-visual"><span aria-hidden="true">🏰</span><img src="IMG_3450.jpg" alt="Nathan and Jay wearing matching Drink Around the World Tour shirts at Epcot" loading="lazy" /></div><p>Matching shirts, matching smiles ♡</p></div>
+        <div class="disney-photo"><div class="disney-photo-visual"><span aria-hidden="true">🌙</span><img src="IMG_3497.jpg" alt="Nathan giving Jay a kiss on the cheek at Epcot" loading="lazy" /></div><p>Stealing a kiss at Epcot ♡</p></div>
       </div>
     </section>
 
@@ -357,7 +359,7 @@
         <div class="timeline-item"><div class="timeline-icon">💘</div><div><h3>May 4 · We became official</h3><p>One very lucky boy got to call you his boyfriend. (Spoiler: it was me.)</p></div></div>
         <div class="timeline-item"><div class="timeline-icon">🏡</div><div><h3>Richmond visits</h3><p>Every time I get to see you, I remember exactly why the trip is worth it.</p></div></div>
         <div class="timeline-item"><div class="timeline-icon">📱</div><div><h3>Our FaceTimes</h3><p>The random check-ins, late-night conversations, sleepy goodnights, and all those moments when seeing your face makes my day better.</p></div></div>
-        <div class="timeline-item"><div class="timeline-icon">🎠</div><div><h3>Disney & Epcot together</h3><p>A whole new set of pictures, inside jokes, and memories — and another place that will always make me think of you.</p></div></div>
+        <div class="timeline-item"><div class="timeline-icon">🎠</div><div><h3>Disney & Epcot together</h3><p>From matching World Tour shirts to Goofy hats and a kiss in the sunshine, I loved getting to experience Epcot with you.</p></div></div>
         <div class="timeline-item"><div class="timeline-icon">🫶</div><div><h3>November 4 · Six months of us</h3><p>Half a year together. Still your boy. Still falling for you. Still looking forward to the next chapter.</p></div></div>
       </div>
     </section>
@@ -457,11 +459,11 @@
       { file: 'IMG_9756.jpg', label: 'the little things', caption: 'The barrel and the magnet — you know the one. ♡' },
       { file: 'IMG_6612.jpg', label: 'my favorite merman', caption: 'My favorite guy under the sea (and everywhere else). ♡' },
       { file: 'fxn 2026-07-17 2052475285FA48EDD1.jpeg', label: 'so aesthetically hot', caption: 'How are you this handsome? ♡' },
-      // NEW OPTIONAL PHOTOS: upload real files with these exact names.
+      // Our three actual Epcot photos (included in the anniversary-site ZIP).
       // Missing optional files are automatically skipped in the scrapbook.
-      { file: 'epcot-us.jpg', label: 'Epcot with my boy', caption: 'Epcot was even more magical with you. ♡', optional: true },
-      { file: 'disney-together.jpg', label: 'our Disney adventure', caption: 'The happiest place with my favorite person. ♡', optional: true },
-      { file: 'disney-favorite.jpg', label: 'one more memory together', caption: 'Can we go back already? ♡', optional: true }
+      { file: 'IMG_3627.jpg', label: 'our goofy teacup selfie', caption: 'Matching Goofy hats and smiling like two kids. This is one of my favorite pictures of us. ♡', optional: true },
+      { file: 'IMG_3450.jpg', label: 'matching World Tour boys', caption: 'Matching shirts, sunshine, and the cutest travel partner I could ask for. ♡', optional: true },
+      { file: 'IMG_3497.jpg', label: 'a kiss at Epcot', caption: 'The sweetest part of our trip was getting to love you openly, right there in the sunshine. ♡', optional: true }
     ];
 
     const scrapbookGrid = document.getElementById('scrapbookGrid');
